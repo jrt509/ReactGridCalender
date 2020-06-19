@@ -17,6 +17,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            color: red;
         }
 
         textarea {
@@ -24,6 +25,7 @@
             grid-column: 1 / -1;
             width: calc(100% - 6px);
             height: calc(100% - 6px);
+           
         }
     }
 }
