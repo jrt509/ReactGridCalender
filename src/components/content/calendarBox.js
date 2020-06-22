@@ -11,11 +11,11 @@ export default class CalendarBox extends Component {
 
     render() {
         return (
-            <div className="calendar-box">
+            <div className={`calendar-box ${this.props.overflow ? "overflow-day" : ""}`}>
                 <div className="date">
                     {this.props.date}
                 </div>
-                <textarea></textarea>
+                <textarea disabled={this.props.overflow}></textarea>
             </div>
         )
     }
