@@ -16,7 +16,13 @@ export default function calendarBoxesWrapper(props) {
 
         for (let i=1; i<=props.daysInMonth; i++) {
             boxesContainer.push(
-                <CalendarBox key={i} date={i} overflow={false}/>
+                <CalendarBox 
+                key={i} 
+                date={i} 
+                overflow={false}
+                month={props.month}
+                year={props.year}
+                />
             )
         }
         for (let i=1; i<=(42 - (props.startDay + props.daysInMonth)); i++) {

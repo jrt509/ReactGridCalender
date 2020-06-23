@@ -10,6 +10,8 @@ export default function contentWrapper(props) {
                 daysInMonth={props.daysInMonth}
                 daysInPreviousMonth={props.daysInPreviousMonth}
                 startDay={props.startDay}
+                month={props.month}
+                year={props.year}
                 />
         </div>
     )
